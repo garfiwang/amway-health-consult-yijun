@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>怡君子・健管諮詢核心評估與調養指引 ｜ 安麗健康管理</title>
+  <meta name="description" content="6歲兒童自閉光譜與專注力不足健康管理個案分析、白色食物腸腦軸機制解析與三餐飲食調養指引。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #059669;
+      --primary-dark: #064E3B;
+      --primary-light: #10B981;
+      --primary-soft: #ECFDF5;
+      --primary-border: #A7F3D0;
+      
+      --accent: #0284C7;
+      --accent-soft: #F0F9FF;
+      --accent-border: #BAE6FD;
+      
+      --amber: #D97706;
+      --amber-soft: #FEF3C7;
+      --amber-border: #FDE68A;
+      
+      --rose: #E11D48;
+      --rose-soft: #FFE4E6;
+      
+      --purple: #7C3AED;
+      --purple-soft: #F5F3FF;
+      
+      --slate-900: #0F172A;
+      --slate-800: #1E293B;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748B;
+      --slate-400: #94A3B8;
+      --slate-200: #E2E8F0;
+      --slate-100: #F1F5F9;
+      --slate-50: #F8FAFC;
+      
+      --white: #FFFFFF;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      --radius-sm: 8px;
+      --radius: 12px;
+      --radius-lg: 18px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #F8FAFC;
+      color: var(--slate-800);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header Nav */
+    header.top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--slate-200);
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s ease;
+    }
+
+    .brand-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 800;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(5, 150, 105, 0.25);
+    }
+
+    .brand-text h1 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      letter-spacing: -0.01em;
+    }
+
+    .brand-text p {
+      font-size: 0.75rem;
+      color: var(--slate-500);
+      font-weight: 500;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--slate-700);
+      border-color: var(--slate-200);
+    }
+
+    .btn-secondary:hover {
+      background: var(--slate-50);
+      border-color: var(--slate-400);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 2px 4px rgba(5, 150, 105, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 24px 16px 80px;
+    }
+
+    /* Case Hero Card */
+    .hero-card {
+      background: linear-gradient(145deg, #FFFFFF 0%, #F0FDF4 100%);
+      border: 1px solid var(--primary-border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, rgba(255,255,255,0) 70%);
+      pointer-events: none;
+    }
+
+    .case-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      letter-spacing: 0.02em;
+    }
+
+    .badge-primary {
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      border: 1px solid var(--primary-border);
+    }
+
+    .badge-amber {
+      background: var(--amber-soft);
+      color: #92400E;
+      border: 1px solid var(--amber-border);
+    }
+
+    .badge-purple {
+      background: var(--purple-soft);
+      color: #5B21B6;
+      border: 1px solid #DDD6FE;
+    }
+
+    .badge-sky {
+      background: var(--accent-soft);
+      color: #0369A1;
+      border: 1px solid var(--accent-border);
+    }
+
+    .hero-title {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-desc {
+      font-size: 0.95rem;
+      color: var(--slate-600);
+      margin-bottom: 20px;
+      max-width: 860px;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--slate-400);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--slate-800);
+    }
+
+    .stat-sub {
+      font-size: 0.78rem;
+      color: var(--slate-500);
+      margin-top: 2px;
+    }
+
+    /* Section Styles */
+    .section-wrap {
+      margin-bottom: 32px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 16px;
+      border-bottom: 2px solid var(--slate-200);
+      padding-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title svg {
+      color: var(--primary);
+    }
+
+    .section-subtitle {
+      font-size: 0.82rem;
+      color: var(--slate-500);
+      font-weight: 500;
+    }
+
+    /* Responsive Assessment Table */
+    .table-container {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--slate-200);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .consult-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+
+    .consult-table th {
+      background: var(--slate-50);
+      color: var(--slate-700);
+      font-weight: 700;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--slate-200);
+      white-space: nowrap;
+    }
+
+    .consult-table td {
+      padding: 18px;
+      border-bottom: 1px solid var(--slate-100);
+      vertical-align: top;
+      color: var(--slate-700);
+    }
+
+    .consult-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .consult-table tr:hover {
+      background-color: #F8FAFC;
+    }
+
+    .dim-cell {
+      width: 16%;
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+
+    .dim-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    .cur-cell {
+      width: 22%;
+      font-weight: 600;
+      color: var(--slate-800);
+    }
+
+    .mech-cell {
+      width: 32%;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--slate-600);
+    }
+
+    .strat-cell {
+      width: 30%;
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    .highlight-box {
+      background: var(--primary-soft);
+      border-left: 3px solid var(--primary);
+      padding: 8px 12px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin-top: 6px;
+      font-size: 0.82rem;
+      color: var(--primary-dark);
+      font-weight: 500;
+    }
+
+    .warning-box {
+      background: var(--amber-soft);
+      border-left: 3px solid var(--amber);
+      padding: 8px 12px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin-top: 6px;
+      font-size: 0.82rem;
+      color: #92400E;
+    }
+
+    /* Mechanism Infographic Card */
+    .infographic-card {
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .flow-step {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      padding: 16px;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+
+    .flow-step:hover {
+      border-color: var(--primary-light);
+      background: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .step-number {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--slate-200);
+      color: var(--slate-700);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .flow-step.active .step-number {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .flow-step.warning .step-number {
+      background: var(--amber);
+      color: var(--white);
+    }
+
+    .flow-step.danger .step-number {
+      background: var(--rose);
+      color: var(--white);
+    }
+
+    .step-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--slate-800);
+      margin-bottom: 6px;
+    }
+
+    .step-desc {
+      font-size: 0.82rem;
+      color: var(--slate-600);
+      line-height: 1.5;
+    }
+
+    /* 3 Mindset Cards */
+    .mindset-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .mindset-card {
+      border-radius: var(--radius);
+      padding: 16px;
+      border: 1px solid;
+    }
+
+    .mindset-card.green {
+      background: var(--primary-soft);
+      border-color: var(--primary-border);
+      color: var(--primary-dark);
+    }
+
+    .mindset-card.amber {
+      background: var(--amber-soft);
+      border-color: var(--amber-border);
+      color: #92400E;
+    }
+
+    .mindset-card.sky {
+      background: var(--accent-soft);
+      border-color: var(--accent-border);
+      color: #075985;
+    }
+
+    .mindset-card h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .mindset-card p {
+      font-size: 0.85rem;
+      line-height: 1.55;
+    }
+
+    /* Nutritional Supplements Grid */
+    .supplement-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 16px;
+    }
+
+    .supp-card {
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+
+    .supp-card:hover {
+      border-color: var(--primary-light);
+      box-shadow: var(--shadow);
+    }
+
+    .supp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .supp-tier {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      text-transform: uppercase;
+    }
+
+    .tier-1 { background: #DCFCE7; color: #166534; }
+    .tier-2 { background: #E0F2FE; color: #075985; }
+    .tier-3 { background: #FEF3C7; color: #92400E; }
+    .tier-4 { background: #F3E8FF; color: #6B21A8; }
+
+    .supp-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 2px;
+    }
+
+    .supp-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .supp-desc {
+      font-size: 0.85rem;
+      color: var(--slate-600);
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    .supp-benefit {
+      background: var(--slate-50);
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      color: var(--slate-700);
+      font-weight: 500;
+    }
+
+    /* Checklist */
+    .checklist-card {
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--slate-100);
+      cursor: pointer;
+    }
+
+    .check-item:last-child {
+      border-bottom: none;
+    }
+
+    .check-box {
+      width: 20px;
+      height: 20px;
+      margin-top: 3px;
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+
+    .check-content h5 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--slate-800);
+      margin-bottom: 2px;
+    }
+
+    .check-content p {
+      font-size: 0.82rem;
+      color: var(--slate-500);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--slate-900);
+      color: var(--white);
+      padding: 12px 20px;
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 100;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 16px;
+      color: var(--slate-400);
+      font-size: 0.82rem;
+      border-top: 1px solid var(--slate-200);
+      margin-top: 40px;
+    }
+
+    footer strong {
+      color: var(--slate-600);
+    }
+
+    /* Mobile Responsive Card Layout */
+    .mobile-cards {
+      display: none;
+    }
+
+    @media (max-width: 820px) {
+      .table-container {
+        display: none;
+      }
+      .mobile-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .mobile-card {
+        background: var(--white);
+        border: 1px solid var(--slate-200);
+        border-radius: var(--radius);
+        padding: 16px;
+        box-shadow: var(--shadow-sm);
+      }
+      .mobile-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--slate-100);
+      }
+      .mobile-card-title {
+        font-weight: 800;
+        color: var(--slate-900);
+        font-size: 1rem;
+      }
+      .mobile-card-body {
+        font-size: 0.88rem;
+        line-height: 1.55;
+      }
+      .mobile-field {
+        margin-bottom: 10px;
+      }
+      .mobile-field-label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--slate-400);
+        text-transform: uppercase;
+        margin-bottom: 2px;
+      }
+      .mobile-field-content {
+        color: var(--slate-800);
+      }
+    }
+
+    /* Print Optimization */
+    @media print {
+      header.top-nav,
+      .btn,
+      .toast,
+      footer {
+        display: none !important;
+      }
+      body {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        font-size: 10pt;
+      }
+      .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
+      .hero-card,
+      .table-container,
+      .infographic-card,
+      .supp-card,
+      .checklist-card {
+        box-shadow: none !important;
+        border: 1px solid #CCCCCC !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 16px !important;
+      }
+      .table-container {
+        display: block !important;
+      }
+      .mobile-cards {
+        display: none !important;
+      }
+      .consult-table th,
+      .consult-table td {
+        padding: 8px 10px !important;
+        font-size: 9pt !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="brand-box">
+      <div class="brand-logo">🌿</div>
+      <div class="brand-text">
+        <h1>安麗健康管理諮詢系統</h1>
+        <p>Nutrilite Personalized Wellness Consultation</p>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <button class="btn btn-secondary" onclick="copyConsultSummary()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        複製諮詢重點
+      </button>
+      <button class="btn btn-primary" onclick="window.print()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        列印 / 匯出 PDF
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Case Hero Card -->
+    <section class="hero-card">
+      <div class="case-badge-row">
+        <span class="badge badge-primary">👤 個案代號：怡君子</span>
+        <span class="badge badge-amber">⚠️ 關注：自閉徵症與專注力不足</span>
+        <span class="badge badge-purple">🍞 飲食特徵：偏好白色食物</span>
+        <span class="badge badge-sky">🟢 體位：身高體重標準</span>
+      </div>
+      <h2 class="hero-title">兒童專注力與自閉光譜・健管核心評估報告</h2>
+      <p class="hero-desc">
+        針對 6 歲學齡前關鍵成長期，以<strong>「腸腦軸線 (Gut-Brain Axis)」</strong>為核心切入點，聚焦於白色精緻澱粉與酪蛋白/麩質外啡肽的生理機制，提供循序漸進的飲食替換與營養素打底方案。
+      </p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-label">年齡與發育期</div>
+          <div class="stat-value">6 歲</div>
+          <div class="stat-sub">幼兒園大班 升 國小一年級</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">體格發育指標</div>
+          <div class="stat-value">身高體重標準</div>
+          <div class="stat-sub">生長曲線常態 / 需防隱性飢餓</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">主訴身心狀態</div>
+          <div class="stat-value">自閉徵症 / 專注渙散</div>
+          <div class="stat-sub">感官敏感度高 / 飲食行為固著</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">調養核心主戰場</div>
+          <div class="stat-value">晚餐家裡現煮</div>
+          <div class="stat-sub">家長 100% 菜單主導權</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Main Assessment Table -->
+    <section class="section-wrap">
+      <div class="section-header">
+        <div>
+          <h3 class="section-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            健管諮詢核心評估與生活型態對照表
+          </h3>
+          <p class="section-subtitle">有條理彙整生理現況、營養生理機制剖析與諮詢引導策略</p>
+        </div>
+      </div>
+
+      <!-- Desktop Table -->
+      <div class="table-container">
+        <table class="consult-table">
+          <thead>
+            <tr>
+              <th>評估維度</th>
+              <th>生活與生理現況</th>
+              <th>營養生理機制深度剖析</th>
+              <th>健管諮詢溝通要點與建議策略</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="dim-cell">
+                基本體格發育
+                <span class="dim-tag badge-sky">生長指標</span>
+              </td>
+              <td class="cur-cell">
+                <strong>6 歲</strong><br>
+                身高、體重標準
+              </td>
+              <td class="mech-cell">
+                巨量營養（熱量、碳水）足夠，但需注意微量營養素的<strong>「隱性飢餓」</strong>。<br>
+                腦神經與神經傳導物質代謝所需的鋅、鎂、維生素B群與必需多元不飽和脂肪酸（Omega-3）容易隱性缺乏。
+              </td>
+              <td class="strat-cell">
+                肯定家長日常照料成果，先建立互信。<br>
+                引導家長理解：<strong>「體格生長達標，不等於大腦細胞營養充足」</strong>，健管核心在於賦予腦細胞最高品質的修復營養。
+              </td>
+            </tr>
+
+            <tr>
+              <td class="dim-cell">
+                神經與行為特質
+                <span class="dim-tag badge-amber">主訴徵候</span>
+              </td>
+              <td class="cur-cell">
+                自閉症徵症<br>
+                <strong>注意力不集中</strong>
+              </td>
+              <td class="mech-cell">
+                1. <strong>腸腦軸線 (Gut-Brain Axis)</strong>：腸黏膜受損（腸漏）時，微發炎訊號會通過迷走神經傳至大腦。<br>
+                2. <strong>神經傳導物質失衡</strong>：多巴胺、去甲腎上腺素與血清素合成原料不足，導致情緒調節與專注力維持困難。
+              </td>
+              <td class="strat-cell">
+                <strong>避開醫療診斷用語</strong>，改以「細胞建構需要充足材料」切入。<br>
+                說明專注力需要「好的蛋白質打底 ＋ 好油脂做神經電線絕緣皮」，讓家長聽得懂且願意落實。
+              </td>
+            </tr>
+
+            <tr>
+              <td class="dim-cell">
+                飲食偏好行為
+                <span class="dim-tag badge-purple">關鍵核心</span>
+              </td>
+              <td class="cur-cell">
+                偏愛<strong>「白色食物」</strong><br>
+                （起司、白飯、白麵）
+              </td>
+              <td class="mech-cell">
+                1. <strong>起司 (酪蛋白) ＆ 麵食 (麩質)</strong>：腸道屏障未健全時，未消化完全的胜肽會形成<strong>類鴉片胜肽（外啡肽）</strong>，穿透血腦屏障干擾專注力與社交。<br>
+                2. <strong>白飯/白麵 (高GI精緻澱粉)</strong>：血糖快速衝高又驟降，引發神經震盪與亢奮後渙散。
+                <div class="warning-box">
+                  <strong>白色食物隱患</strong>：缺乏彩虹植物營養素，抗氧化力弱。
+                </div>
+              </td>
+              <td class="strat-cell">
+                <strong>切忌強硬剝奪禁止</strong>（易引發自閉特質劇烈抗拒）。<br>
+                <strong>採取「漸進混搭換色法」</strong>：<br>
+                • 白飯中逐步混入 10% 地瓜丁、花椰菜碎米或彩米。<br>
+                • 減少起司頻率，改以天然原型好油脂代替。<br>
+                • 補充益生菌修補腸黏膜，自然減緩對白色食物的渴望。
+              </td>
+            </tr>
+
+            <tr>
+              <td class="dim-cell">
+                早餐生活作息
+                <span class="dim-tag badge-primary">晨間能量</span>
+              </td>
+              <td class="cur-cell">
+                水煮蛋 ＋ 香蕉 ＋ 蘋果
+              </td>
+              <td class="mech-cell">
+                <strong>優勢</strong>：水煮蛋提供了優質蛋白質與卵磷脂（膽鹼）；香蕉蘋果富含天然鉀與色胺酸。<br>
+                <strong>潛在短板</strong>：水果比例稍高，果糖吸收快；缺乏 Omega-3 好油脂，晨間飽足續航力稍顯不足。
+              </td>
+              <td class="strat-cell">
+                <strong>微調升級提案</strong>：<br>
+                • 保留水煮蛋。<br>
+                • 搭配沖泡半匙<strong>全植物蛋白素</strong>或<strong>卵磷脂粉</strong>溫飲，穩定晨間血糖，避免 10:00 專注力斷崖。<br>
+                • 香蕉蘋果各吃半顆，增加咀嚼與纖維穩定度。
+              </td>
+            </tr>
+
+            <tr>
+              <td class="dim-cell">
+                中餐生活作息
+                <span class="dim-tag badge-sky">學校環境</span>
+              </td>
+              <td class="cur-cell">
+                學校營養午餐
+              </td>
+              <td class="mech-cell">
+                外食大鍋烹調油大多為高 Omega-6 沙拉油（易促發炎），且常有勾芡、加工肉品、精緻麵食，家長難以直接控管食材來源與過敏原。
+              </td>
+              <td class="strat-cell">
+                請家長提醒孩子：少喝含糖湯品、少吃油炸麵衣、多吃原型綠色蔬菜。<br>
+                下午放學回家時，準備健康點心（如綜合無調味堅果、無糖豆漿加蛋白素）進行「放學修復」。
+              </td>
+            </tr>
+
+            <tr>
+              <td class="dim-cell">
+                晚餐生活作息
+                <span class="dim-tag badge-primary">黃金窗口</span>
+              </td>
+              <td class="cur-cell">
+                <strong>家裡現煮</strong>
+              </td>
+              <td class="mech-cell">
+                <strong>【100% 營養修復核心主戰場】</strong><br>
+                家長擁有完整的食材選擇權與烹調掌控力，是落實彩虹餐盤、修補腸道黏膜與補充抗發炎好油脂的唯一最佳時機。
+              </td>
+              <td class="strat-cell">
+                <strong>打造「彩虹餐盤 ＋ 好油脂」</strong>：<br>
+                • 蛋白質：深海小型魚（鮭魚/鯖魚）為主，天然補充 Omega-3。<br>
+                • 蔬菜：每餐至少 2 種顏色深色蔬菜。<br>
+                • 主食：糙米/五穀混白米，逐步降低純白米比例。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile Cards Fallback -->
+      <div class="mobile-cards">
+        <div class="mobile-card">
+          <div class="mobile-card-header">
+            <span class="mobile-card-title">基本體格發育</span>
+            <span class="badge badge-sky">生長指標</span>
+          </div>
+          <div class="mobile-card-body">
+            <div class="mobile-field">
+              <div class="mobile-field-label">現況</div>
+              <div class="mobile-field-content"><strong>6 歲</strong>，身高體重標準</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">營養機制</div>
+              <div class="mobile-field-content">熱量足夠，但需預防「隱性飢餓」，鋅、鎂、B群、Omega-3 易缺乏。</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">諮詢策略</div>
+              <div class="mobile-field-content">肯定家長，引導「體格達標不等於腦神經營養充足」，著重神經微量營養。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-card">
+          <div class="mobile-card-header">
+            <span class="mobile-card-title">神經與行為特質</span>
+            <span class="badge badge-amber">主訴徵候</span>
+          </div>
+          <div class="mobile-card-body">
+            <div class="mobile-field">
+              <div class="mobile-field-label">現況</div>
+              <div class="mobile-field-content">自閉症徵症、注意力不集中</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">營養機制</div>
+              <div class="mobile-field-content">腸腦軸線受發炎訊號干擾；多巴胺、去甲腎上腺素與血清素合成原料不足。</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">諮詢策略</div>
+              <div class="mobile-field-content">不談醫療名詞，強調「好的蛋白質打底 ＋ 好油脂保護神經電線」，協助大腦平穩運作。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-card">
+          <div class="mobile-card-header">
+            <span class="mobile-card-title">飲食偏好行為</span>
+            <span class="badge badge-purple">關鍵核心</span>
+          </div>
+          <div class="mobile-card-body">
+            <div class="mobile-field">
+              <div class="mobile-field-label">現況</div>
+              <div class="mobile-field-content">偏愛<strong>白色食物</strong>（起司、白飯、白麵）</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">營養機制</div>
+              <div class="mobile-field-content">起司酪蛋白與麵食麩質易轉化為外啡肽干擾腦部；精緻澱粉使血糖暴起暴落。</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">諮詢策略</div>
+              <div class="mobile-field-content"><strong>不可硬性禁止</strong>，採漸進混搭換色法（混地瓜丁/彩米/花椰菜米），搭配益生菌修補腸道。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-card">
+          <div class="mobile-card-header">
+            <span class="mobile-card-title">三餐作息配置</span>
+            <span class="badge badge-primary">生活型態</span>
+          </div>
+          <div class="mobile-card-body">
+            <div class="mobile-field">
+              <div class="mobile-field-label">早餐現況</div>
+              <div class="mobile-field-content">水煮蛋 ＋ 香蕉 ＋ 蘋果 ➜ <strong>建議加入蛋白粉/卵磷脂溫飲</strong>，水果減半防果糖過衝。</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">午餐現況</div>
+              <div class="mobile-field-content">學校營養午餐 ➜ 叮嚀少喝甜濃湯、少炸物，放學回家補充原型點心。</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">晚餐現況</div>
+              <div class="mobile-field-content"><strong>家裡煮（黃金窗口）</strong> ➜ 100% 主場！彩虹雙色蔬菜、深海魚（鮭/鯖）、糙米混白米。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: White Diet & Gut-Brain Axis Infographic -->
+    <section class="section-wrap">
+      <div class="section-header">
+        <div>
+          <h3 class="section-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+            深度解密：為什麼「白色食物」會干擾大腦專注力？
+          </h3>
+          <p class="section-subtitle">從腸腦軸線 (Gut-Brain Axis) 與神經微發炎機制看挑食背後的科學真相</p>
+        </div>
+      </div>
+
+      <div class="infographic-card">
+        <div class="flow-steps">
+          <div class="flow-step warning">
+            <div class="step-number">1</div>
+            <h4 class="step-title">高頻攝取白色食物</h4>
+            <p class="step-desc">大量攝取起司（高酪蛋白）、白米飯與白麵食（精緻高GI碳水 ＋ 小麥麩質）。</p>
+          </div>
+
+          <div class="flow-step warning">
+            <div class="step-number">2</div>
+            <h4 class="step-title">雙重生理衝擊</h4>
+            <p class="step-desc">① 血糖急升急降引起情緒浮躁。<br>② 麩質與酪蛋白因腸道酵素不足而無法完全水解。</p>
+          </div>
+
+          <div class="flow-step danger">
+            <div class="step-number">3</div>
+            <h4 class="step-title">外啡肽與腸漏風險</h4>
+            <p class="step-desc">未消化胜肽轉化為外啡肽 (Casomorphin)，穿透鬆弛的腸黏膜屏障滲漏至血液。</p>
+          </div>
+
+          <div class="flow-step danger">
+            <div class="step-number">4</div>
+            <h4 class="step-title">大腦專注力斷崖</h4>
+            <p class="step-desc">胜肽穿越血腦屏障刺激類鴉片受體，引發大腦迷茫、感官超載、分心與固定行為強化。</p>
+          </div>
+        </div>
+
+        <div class="mindset-grid">
+          <div class="mindset-card green">
+            <h4>🌿 心法 1：先修腸道，大腦自然放鬆</h4>
+            <p>不要只盯著孩子的分心問題。優先補充好菌與纖維修補腸屏障，干擾大腦的外啡肽減少了，專注時間自然拉長。</p>
+          </div>
+          <div class="mindset-card amber">
+            <h4>🎨 心法 2：漸進混搭，絕不硬碰硬</h4>
+            <p>自閉特質孩童對口感質地極度敏感。硬抽掉白飯只會引發焦慮對立；採「10% 混入法」（地瓜丁、彩米）循序漸進。</p>
+          </div>
+          <div class="mindset-card sky">
+            <h4>🍳 心法 3：把握晚餐，主場全力發揮</h4>
+            <p>白天的午餐無法苛求，把所有心力放在「家裡現煮的晚餐」，一週 5 天做好彩虹原型晚餐，孩子進步就會很驚人。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Supplement Strategy -->
+    <section class="section-wrap">
+      <div class="section-header">
+        <div>
+          <h3 class="section-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7.07-7.07l7 7a5 5 0 0 1-7.07 7.07Z"></path><path d="m8.5 8.5 7 7"></path></svg>
+            健管調養與營養素階梯配置方案
+          </h3>
+          <p class="section-subtitle">專為 6 歲兒童設計之紐崔萊關鍵營養調理架構</p>
+        </div>
+      </div>
+
+      <div class="supplement-grid">
+        <!-- Supp 1 -->
+        <div class="supp-card">
+          <div>
+            <div class="supp-header">
+              <span class="supp-tier tier-1">第一階段首要</span>
+              <span class="badge badge-primary">腸道菌相</span>
+            </div>
+            <h4 class="supp-title">紐崔萊 益生菌</h4>
+            <div class="supp-name">Probiotics for Gut-Brain Axis</div>
+            <p class="supp-desc">
+              強化腸黏膜緊密連接，重塑健康微生態，減少外啡肽與毒素穿透腸壁，促進 90% 腸道血清素平穩合成。
+            </p>
+          </div>
+          <div class="supp-benefit">
+            💡 每日 1 包，晨起或睡前空腹直接倒口中配溫涼水。
+          </div>
+        </div>
+
+        <!-- Supp 2 -->
+        <div class="supp-card">
+          <div>
+            <div class="supp-header">
+              <span class="supp-tier tier-2">神經突觸核心</span>
+              <span class="badge badge-sky">大腦好油</span>
+            </div>
+            <h4 class="supp-title">純淨深海魚油 (EPA/DHA)</h4>
+            <div class="supp-name">Omega-3 Fatty Acids</div>
+            <p class="supp-desc">
+              DHA 是腦神經細胞膜與髓鞘的關鍵成分，EPA 抑制中樞神經微發炎，大量醫學研究證實有助改善孩童專注力與學習力。
+            </p>
+          </div>
+          <div class="supp-benefit">
+            💡 隨餐或飯後食用（可剪開膠囊拌入優格或溫飲中）。
+          </div>
+        </div>
+
+        <!-- Supp 3 -->
+        <div class="supp-card">
+          <div>
+            <div class="supp-header">
+              <span class="supp-tier tier-3">神經傳導物質</span>
+              <span class="badge badge-amber">專注傳導</span>
+            </div>
+            <h4 class="supp-title">紐崔萊 卵磷脂粉 / 嚼片</h4>
+            <div class="supp-name">Lecithin & Choline</div>
+            <p class="supp-desc">
+              提供神經傳導物質「乙醯膽鹼」必備合成原料（膽鹼），就像神經系統的通信潤滑劑，強化指令理解力與注意力集中。
+            </p>
+          </div>
+          <div class="supp-benefit">
+            💡 早餐可加入水煮蛋同吃，或攪拌於溫豆漿中飲用。
+          </div>
+        </div>
+
+        <!-- Supp 4 -->
+        <div class="supp-card">
+          <div>
+            <div class="supp-header">
+              <span class="supp-tier tier-4">細胞與抗體底層</span>
+              <span class="badge badge-purple">優質胺基酸</span>
+            </div>
+            <h4 class="supp-title">全植物優質蛋白素</h4>
+            <div class="supp-name">All Plant Protein (PDCAAS=1)</div>
+            <p class="supp-desc">
+              大豆、小麥、豌豆專利複合配方，提供合成神經傳導物質的色胺酸、酪胺酸，並能延緩晨間升糖速率，維持大腦平穩供能。
+            </p>
+          </div>
+          <div class="supp-benefit">
+            💡 早餐溫水沖泡半匙～1匙，搭配燕麥或水果飲用。
+          </div>
+        </div>
+
+        <!-- Supp 5 -->
+        <div class="supp-card">
+          <div>
+            <div class="supp-header">
+              <span class="supp-tier tier-2">安定神經平衡</span>
+              <span class="badge badge-sky">礦物質與輔酶</span>
+            </div>
+            <h4 class="supp-title">加美D鈣錠 / 綜合嚼片</h4>
+            <div class="supp-name">Calcium, Magnesium, B-Complex & Zinc</div>
+            <p class="supp-desc">
+              鎂是天然的神經鎮靜劑，鋅是 300 多種酵素輔酶並調控神經突觸塑性；B 群協助能量代謝與神經傳導物質生成。
+            </p>
+          </div>
+          <div class="supp-benefit">
+            💡 隨餐或晚餐後嚼食，協助夜間睡眠深層修復。
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Follow-up Checklist -->
+    <section class="section-wrap">
+      <div class="section-header">
+        <div>
+          <h3 class="section-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+            健管諮詢追蹤檢核表
+          </h3>
+          <p class="section-subtitle">點擊核取方塊可直接於瀏覽器保存諮詢進展（自動記錄）</p>
+        </div>
+      </div>
+
+      <div class="checklist-card">
+        <label class="check-item">
+          <input type="checkbox" class="check-box" id="check-1" onchange="saveChecklist()">
+          <div class="check-content">
+            <h5>第 1 次諮詢：建立基準線與互信</h5>
+            <p>確認起司與白麵每週攝取頻率，記錄排便狀況（次數、便祕/腹瀉），說明「腸腦軸線」觀念，不勉強戒斷白色食物。</p>
+          </div>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" class="check-box" id="check-2" onchange="saveChecklist()">
+          <div class="check-content">
+            <h5>第 7 天追蹤：早餐微調體感確認</h5>
+            <p>確認早餐水煮蛋加入蛋白素或卵磷脂粉之飲用適應性，詢問上午 10:00 學校活動精神與上課穩定度。</p>
+          </div>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" class="check-box" id="check-3" onchange="saveChecklist()">
+          <div class="check-content">
+            <h5>第 14 天追蹤：晚餐換色與排便反饋</h5>
+            <p>家裡晚餐白飯混入彩米/地瓜丁執行狀況，排便型態是否變順暢金黃，晚間入睡容易度與情緒躁動指標觀察。</p>
+          </div>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" class="check-box" id="check-4" onchange="saveChecklist()">
+          <div class="check-content">
+            <h5>第 30 天複評：專注力持續時間評估</h5>
+            <p>與幼兒園老師或家長溝通，評估孩子指令遵從度、坐定專注時間與語言互動反應是否有明顯進步。</p>
+          </div>
+        </label>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast -->
+  <div id="toast" class="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-msg">已成功複製健管諮詢重點！</span>
+  </div>
+
+  <footer>
+    <p><strong>安麗個人化健康管理諮詢系統</strong> ｜ 個案代號：怡君子（6歲）</p>
+    <p style="margin-top: 6px;">醫療有極限・營養是關鍵 ｜ 本文件供健康管理諮詢溝通與生活型態輔導使用</p>
+  </footer>
+
+  <script>
+    // Checklist LocalStorage Persistence
+    function loadChecklist() {
+      for (let i = 1; i <= 4; i++) {
+        const checked = localStorage.getItem('yijun_child_check_' + i);
+        if (checked === 'true') {
+          const el = document.getElementById('check-' + i);
+          if (el) el.checked = true;
+        }
+      }
+    }
+
+    function saveChecklist() {
+      for (let i = 1; i <= 4; i++) {
+        const el = document.getElementById('check-' + i);
+        if (el) {
+          localStorage.setItem('yijun_child_check_' + i, el.checked);
+        }
+      }
+      showToast('諮詢進展已自動儲存於瀏覽器！');
+    }
+
+    // Copy Summary Function
+    function copyConsultSummary() {
+      const summaryText = `【怡君子・6歲健管諮詢摘要】
+• 生理指標：身高體重標準，具自閉特質、注意力不集中。
+• 飲食特質：偏愛白色食物（起司、白飯、白麵）。
+• 核心機制：起司酪蛋白與小麥麩質在腸漏情況下形成外啡肽，干擾大腦專注；高精緻澱粉引發血糖劇烈震盪。
+• 調養策略：
+  1. 早餐：水煮蛋保留，加入半匙植物蛋白粉/卵磷脂粉穩血糖，水果減半。
+  2. 午餐：營養午餐少喝甜湯，多吃原型青菜，放學給予無糖堅果蛋白點心。
+  3. 晚餐：主場現煮，彩虹雙色蔬菜、深海魚（鮭/鯖魚）、白飯混 10% 彩米/地瓜丁。
+• 建議營養素：益生菌（修腸腦軸）、深海魚油（Omega-3）、大豆卵磷脂（乙醯膽鹼）、全植物蛋白素、加美D鈣鎂。`;
+
+      navigator.clipboard.writeText(summaryText).then(() => {
+        showToast('已複製健管諮詢摘要至剪貼簿！');
+      }).catch(() => {
+        showToast('複製失敗，請手動選取文字複製。');
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-msg');
+      if (toast && toastMsg) {
+        toastMsg.innerText = msg;
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 2600);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', loadChecklist);
+  </script>
+</body>
+</html>

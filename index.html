@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>怡君子・健管諮詢核心評估與調養指引 ｜ 安麗健康管理</title>
-  <meta name="description" content="6歲兒童自閉光譜、專注力不足與甲狀腺低下用藥（辛特昂錠致便秘）之健康管理個案分析、白色食物腸腦軸機制解析與三餐飲食調養指引。">
+  <title>怡君子・健管個案記錄表與初步評估報告 ｜ 安麗健康管理</title>
+  <meta name="description" content="6歲兒童自閉光譜、專注力不足與甲狀腺低下用藥（辛特昂錠致便秘）之健管個案記錄表與初步評估報告。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -170,7 +170,7 @@
       border: 1px solid var(--primary-border);
       border-radius: var(--radius-lg);
       padding: 28px 24px;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       box-shadow: var(--shadow);
       position: relative;
       overflow: hidden;
@@ -288,16 +288,24 @@
 
     /* Section Styles */
     .section-wrap {
-      margin-bottom: 32px;
+      margin-bottom: 36px;
     }
 
-    .section-header {
+    .section-header-box {
+      background: #FFFFFF;
+      border: 1px solid var(--slate-200);
+      border-left: 5px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 16px;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
-      margin-bottom: 16px;
-      border-bottom: 2px solid var(--slate-200);
-      padding-bottom: 8px;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-header-box.report {
+      border-left-color: var(--accent);
     }
 
     .section-title {
@@ -306,26 +314,44 @@
       color: var(--slate-900);
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
-    .section-title svg {
-      color: var(--primary);
+    .part-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+    }
+
+    .part-tag.green {
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      border: 1px solid var(--primary-border);
+    }
+
+    .part-tag.sky {
+      background: var(--accent-soft);
+      color: #0369A1;
+      border: 1px solid var(--accent-border);
     }
 
     .section-subtitle {
-      font-size: 0.82rem;
+      font-size: 0.84rem;
       color: var(--slate-500);
       font-weight: 500;
+      margin-top: 4px;
     }
 
-    /* Responsive Assessment Table */
+    /* Table Styles */
     .table-container {
       background: var(--white);
       border-radius: var(--radius);
       border: 1px solid var(--slate-200);
       box-shadow: var(--shadow-sm);
       overflow: hidden;
+      margin-bottom: 12px;
     }
 
     .consult-table {
@@ -345,7 +371,7 @@
     }
 
     .consult-table td {
-      padding: 18px;
+      padding: 16px 18px;
       border-bottom: 1px solid var(--slate-100);
       vertical-align: top;
       color: var(--slate-700);
@@ -359,38 +385,60 @@
       background-color: #F8FAFC;
     }
 
-    .dim-cell {
-      width: 15%;
-      font-weight: 700;
+    .cat-cell {
+      width: 14%;
+      font-weight: 800;
       color: var(--slate-900);
+      background: #FBFDFB;
+      border-right: 1px solid var(--slate-100);
     }
 
-    .dim-tag {
-      display: inline-block;
-      font-size: 0.75rem;
-      padding: 2px 8px;
-      border-radius: var(--radius-sm);
-      margin-top: 4px;
-      font-weight: 600;
+    .item-cell {
+      width: 18%;
+      font-weight: 700;
+      color: var(--slate-800);
     }
 
-    .cur-cell {
-      width: 22%;
+    .val-cell {
+      width: 32%;
       font-weight: 600;
       color: var(--slate-800);
     }
 
-    .mech-cell {
-      width: 33%;
+    .note-cell {
+      width: 36%;
       font-size: 0.88rem;
       line-height: 1.55;
       color: var(--slate-600);
     }
 
-    .strat-cell {
+    /* Report Table specific */
+    .dim-cell {
+      width: 18%;
+      font-weight: 800;
+      color: var(--slate-900);
+    }
+
+    .mech-cell {
       width: 30%;
       font-size: 0.88rem;
       line-height: 1.55;
+      color: var(--slate-600);
+    }
+
+    .risk-cell {
+      width: 24%;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: #991B1B;
+      background: #FFFBFB;
+    }
+
+    .action-cell {
+      width: 28%;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--slate-700);
     }
 
     .highlight-box {
@@ -404,16 +452,6 @@
       font-weight: 500;
     }
 
-    .warning-box {
-      background: var(--amber-soft);
-      border-left: 3px solid var(--amber);
-      padding: 8px 12px;
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      margin-top: 6px;
-      font-size: 0.82rem;
-      color: #92400E;
-    }
-
     .danger-box {
       background: var(--rose-soft);
       border-left: 3px solid var(--rose);
@@ -422,81 +460,6 @@
       margin-top: 6px;
       font-size: 0.82rem;
       color: #9F1239;
-    }
-
-    /* Mechanism Infographic Card */
-    .infographic-card {
-      background: var(--white);
-      border: 1px solid var(--slate-200);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .flow-steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 14px;
-      margin: 20px 0;
-      position: relative;
-    }
-
-    .flow-step {
-      background: var(--slate-50);
-      border: 1px solid var(--slate-200);
-      border-radius: var(--radius);
-      padding: 16px;
-      position: relative;
-      transition: all 0.2s ease;
-    }
-
-    .flow-step:hover {
-      border-color: var(--primary-light);
-      background: #FFFFFF;
-      transform: translateY(-2px);
-      box-shadow: var(--shadow);
-    }
-
-    .step-number {
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      background: var(--slate-200);
-      color: var(--slate-700);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-
-    .flow-step.active .step-number {
-      background: var(--primary);
-      color: var(--white);
-    }
-
-    .flow-step.warning .step-number {
-      background: var(--amber);
-      color: var(--white);
-    }
-
-    .flow-step.danger .step-number {
-      background: var(--rose);
-      color: var(--white);
-    }
-
-    .step-title {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--slate-800);
-      margin-bottom: 6px;
-    }
-
-    .step-desc {
-      font-size: 0.82rem;
-      color: var(--slate-600);
-      line-height: 1.5;
     }
 
     /* Timeline schedule card */
@@ -547,7 +510,6 @@
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: var(--radius);
       padding: 14px;
-      position: relative;
     }
 
     .timeline-time {
@@ -570,52 +532,6 @@
       font-size: 0.78rem;
       color: #94A3B8;
       line-height: 1.45;
-    }
-
-    /* 3 Mindset Cards */
-    .mindset-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 14px;
-      margin-top: 18px;
-    }
-
-    .mindset-card {
-      border-radius: var(--radius);
-      padding: 16px;
-      border: 1px solid;
-    }
-
-    .mindset-card.green {
-      background: var(--primary-soft);
-      border-color: var(--primary-border);
-      color: var(--primary-dark);
-    }
-
-    .mindset-card.amber {
-      background: var(--amber-soft);
-      border-color: var(--amber-border);
-      color: #92400E;
-    }
-
-    .mindset-card.rose {
-      background: var(--rose-soft);
-      border-color: var(--rose-border);
-      color: #9F1239;
-    }
-
-    .mindset-card h4 {
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .mindset-card p {
-      font-size: 0.85rem;
-      line-height: 1.55;
     }
 
     /* Nutritional Supplements Grid */
@@ -846,7 +762,7 @@
       }
       .hero-card,
       .table-container,
-      .infographic-card,
+      .section-header-box,
       .supp-card,
       .checklist-card,
       .schedule-card {
@@ -922,293 +838,343 @@
         <span class="badge badge-purple">🍞 偏好：白色食物（起司/飯/麵）</span>
         <span class="badge badge-sky">🟢 體位：身高體重標準</span>
       </div>
-      <h2 class="hero-title">兒童專注力・甲狀腺低下用藥與便秘健管評估報告</h2>
+      <h2 class="hero-title">個案客觀記錄表 ＆ 初步健管評估報告</h2>
       <p class="hero-desc">
-        針對 6 歲學齡前關鍵成長期，統整<strong>「甲狀腺能量代謝 ➔ 腸道蠕動遲緩 ➔ 白色精緻飲食 ➔ 頑固便秘 ➔ 腸腦軸發炎加劇專注渙散」</strong>之惡性循環，並嚴格落實<strong>「辛特昂錠與鈣/高蛋白間隔 4 小時」</strong>之用藥安全與潤腸調養方案。
+        依據諮詢師專業規範重構呈現：<strong>【上半段】嚴謹記錄患者之基本體況、生活習慣與特殊飲食偏好</strong>；<strong>【下半段】提供功能醫學與腸腦軸線之專業初步評估報告與處方指引</strong>。
       </p>
 
       <div class="stat-grid">
         <div class="stat-card">
           <div class="stat-label">年齡與發育期</div>
           <div class="stat-value">6 歲</div>
-          <div class="stat-sub">幼兒園大班 升 國小一年級</div>
+          <div class="stat-sub">大班升國小一年級 / 成長關鍵期</div>
         </div>
         <div class="stat-card">
           <div class="stat-label">常規用藥與排便</div>
-          <div class="stat-value" style="color: #E11D48;">辛特昂錠 ➔ 便秘</div>
-          <div class="stat-sub">甲狀腺素 / 腸蠕動緩慢乾硬</div>
+          <div class="stat-value" style="color: #E11D48;">辛特昂 ➔ 便秘</div>
+          <div class="stat-sub">甲狀腺低下 / 腸蠕動緩慢乾硬</div>
         </div>
         <div class="stat-card">
-          <div class="stat-label">神經與行為特質</div>
-          <div class="stat-value">自閉徵症 / 專注渙散</div>
-          <div class="stat-sub">大腦代謝低緩 / 腸腦軸受阻</div>
+          <div class="stat-label">飲食偏好行為</div>
+          <div class="stat-value" style="color: #7C3AED;">白色食物</div>
+          <div class="stat-sub">起司、白飯、白麵（缺纖維）</div>
         </div>
         <div class="stat-card">
           <div class="stat-label">用藥安全守則</div>
           <div class="stat-value" style="color: #059669;">間隔 4 小時</div>
-          <div class="stat-sub">鈣片/蛋白素排在晚餐與睡前</div>
+          <div class="stat-sub">鈣片/蛋白粉排在晚餐與睡前</div>
         </div>
       </div>
     </section>
 
-    <!-- Section 1: Main Assessment Table -->
+    <!-- Part 1: Upper Half - Patient Record Table -->
     <section class="section-wrap">
-      <div class="section-header">
+      <div class="section-header-box">
         <div>
-          <h3 class="section-title">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            健管諮詢核心評估與生活型態對照表
-          </h3>
-          <p class="section-subtitle">有條理彙整生理現況、藥理營養機制深度剖析與諮詢引導策略</p>
+          <div class="section-title">
+            <span class="part-tag green">上半段</span>
+            📋 個案記錄表（基本體況・生活習慣・飲食偏好）
+          </div>
+          <div class="section-subtitle">諮詢師客觀記錄之患者基本生理體況、日常作息與飲食行為數據</div>
         </div>
       </div>
 
-      <!-- Desktop Table -->
+      <!-- Desktop Table Part 1 -->
+      <div class="table-container">
+        <table class="consult-table">
+          <thead>
+            <tr>
+              <th>記錄大類</th>
+              <th>細項指標</th>
+              <th>個案現況與記錄細節</th>
+              <th>臨床備註與特質說明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cat-cell" rowspan="2">基本資料</td>
+              <td class="item-cell">個案代號</td>
+              <td class="val-cell"><strong>怡君子</strong>（怡君之子）</td>
+              <td class="note-cell">個人化健管諮詢專屬個案代號</td>
+            </tr>
+            <tr>
+              <td class="item-cell">年齡階段</td>
+              <td class="val-cell"><strong>6 歲</strong></td>
+              <td class="note-cell">學齡前階段（幼兒園大班即將升國小一年級）</td>
+            </tr>
+
+            <tr>
+              <td class="cat-cell" rowspan="4">基本體況</td>
+              <td class="item-cell">生長體位指標</td>
+              <td class="val-cell"><strong>身高體重標準</strong></td>
+              <td class="note-cell">生長發育各項體格發育指標均符合該年齡常態標準範圍</td>
+            </tr>
+            <tr>
+              <td class="item-cell">神經與行為特質</td>
+              <td class="val-cell"><strong>自閉症徵症、注意力不集中</strong></td>
+              <td class="note-cell">易分心、坐定持續時間短、對特定感官刺激與環境敏感</td>
+            </tr>
+            <tr>
+              <td class="item-cell">內分泌與用藥</td>
+              <td class="val-cell"><span style="color: #E11D48; font-weight: 700;">辛特昂錠 (Syntroxine)</span></td>
+              <td class="note-cell">確診<strong>甲狀腺功能低下</strong>，每日早晨常規服用之治療藥物</td>
+            </tr>
+            <tr>
+              <td class="item-cell">腸道排便狀況</td>
+              <td class="val-cell"><span style="color: #E11D48; font-weight: 700;">造成頑固便秘</span></td>
+              <td class="note-cell">甲狀腺素低下導致腸道蠕動嚴重遲緩，伴隨排便困難、糞便乾硬</td>
+            </tr>
+
+            <tr>
+              <td class="cat-cell" rowspan="2">飲食偏好</td>
+              <td class="item-cell">特殊偏食特徵</td>
+              <td class="val-cell"><span style="color: #7C3AED; font-weight: 700;">極度偏愛「白色食物」</span></td>
+              <td class="note-cell">對非白色、色彩鮮豔或口感複雜之食物具明顯抗拒與防禦心理</td>
+            </tr>
+            <tr>
+              <td class="item-cell">主要偏好品項</td>
+              <td class="val-cell"><strong>起司、白米飯、白麵條</strong></td>
+              <td class="note-cell">偏好高精緻澱粉、小麥麵筋（麩質）與乳酪製品（酪蛋白）</td>
+            </tr>
+
+            <tr>
+              <td class="cat-cell" rowspan="4">生活習慣</td>
+              <td class="item-cell">晨間服藥習慣</td>
+              <td class="val-cell">早晨起床服藥 ➔ 溫水</td>
+              <td class="note-cell">辛特昂錠配純淨溫開水空腹服用</td>
+            </tr>
+            <tr>
+              <td class="item-cell">早餐內容</td>
+              <td class="val-cell"><strong>水煮蛋 ＋ 香蕉 ＋ 蘋果</strong></td>
+              <td class="note-cell">在家進食；含優質蛋類蛋白、卵磷脂膽鹼與天然水果果膠</td>
+            </tr>
+            <tr>
+              <td class="item-cell">中餐習慣</td>
+              <td class="val-cell"><strong>學校營養午餐</strong></td>
+              <td class="note-cell">幼兒園團體供應；外食大鍋烹調，精緻白澱粉與油脂來源較雜</td>
+            </tr>
+            <tr>
+              <td class="item-cell">晚餐習慣</td>
+              <td class="val-cell"><strong>家裡現煮</strong></td>
+              <td class="note-cell">家長親自掌廚烹調；具 100% 食材選擇與料理掌控權（黃金窗口）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile Cards for Part 1 -->
+      <div class="mobile-cards">
+        <div class="mobile-card">
+          <div class="mobile-card-header">
+            <span class="mobile-card-title">基本體況記錄</span>
+            <span class="badge badge-rose">體況指標</span>
+          </div>
+          <div class="mobile-card-body">
+            <div class="mobile-field">
+              <div class="mobile-field-label">年齡與體位</div>
+              <div class="mobile-field-content"><strong>6 歲</strong>，身高體重標準</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">神經與行為特質</div>
+              <div class="mobile-field-content">自閉症徵症、注意力不集中、感官敏感</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">常規用藥與排便</div>
+              <div class="mobile-field-content" style="color: #E11D48; font-weight: 700;">服用辛特昂錠（甲狀腺低下治療藥），造成頑固便秘</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-card">
+          <div class="mobile-card-header">
+            <span class="mobile-card-title">飲食偏好與生活習慣</span>
+            <span class="badge badge-purple">飲食作息</span>
+          </div>
+          <div class="mobile-card-body">
+            <div class="mobile-field">
+              <div class="mobile-field-label">偏好食物</div>
+              <div class="mobile-field-content"><strong>喜愛白色食物</strong>（起司、白飯、白麵）</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">早餐內容</div>
+              <div class="mobile-field-content">水煮蛋 ＋ 香蕉 ＋ 蘋果</div>
+            </div>
+            <div class="mobile-field">
+              <div class="mobile-field-label">中餐與晚餐</div>
+              <div class="mobile-field-content">中餐：學校營養午餐；晚餐：家裡現煮</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 2: Lower Half - Preliminary Assessment Report -->
+    <section class="section-wrap">
+      <div class="section-header-box report">
+        <div>
+          <div class="section-title">
+            <span class="part-tag sky">下半段</span>
+            🔬 初步評估報告（機制剖析與健管調養指引）
+          </div>
+          <div class="section-subtitle">針對上半段記錄，從功能營養學、腸腦軸線與用藥安全深度評估與規劃</div>
+        </div>
+      </div>
+
+      <!-- Desktop Table Part 2 -->
       <div class="table-container">
         <table class="consult-table">
           <thead>
             <tr>
               <th>評估維度</th>
-              <th>生活與生理現況</th>
-              <th>營養生理機制深度剖析</th>
-              <th>健管諮詢溝通要點與建議策略</th>
+              <th>核心生理與病理機制剖析</th>
+              <th>潛在健康風險與影響</th>
+              <th>健管切入策略與改善處方建議</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td class="dim-cell">
-                基本體格發育
-                <span class="dim-tag badge-sky">生長指標</span>
-              </td>
-              <td class="cur-cell">
-                <strong>6 歲</strong><br>
-                身高、體重標準
+                ① 藥物與排便機能評估
+                <span class="dim-tag badge-rose">用藥安全</span>
               </td>
               <td class="mech-cell">
-                巨量熱量攝取基本達標，但需預防<strong>「隱性飢餓」</strong>。<br>
-                甲狀腺素合成與神經突觸所需的<strong>鋅、硒、鎂、維生素B群與必需脂肪酸 (Omega-3)</strong> 容易隱性缺乏。
+                1. <strong>甲狀腺慢代謝致便秘</strong>：甲狀腺機能低下使全身粒線體代謝變慢，胃腸道平滑肌蠕動乏力。<br>
+                2. <strong>用藥吸收禁忌</strong>：辛特昂錠（左旋甲狀腺素）極易與<strong>鈣、鐵、膳食纖維、大豆蛋白</strong>在消化道中螯合流失。
               </td>
-              <td class="strat-cell">
-                肯定家長日常撫育成果，引導家長理解：<strong>「生長達標不等於大腦神經營養充足」</strong>，健管核心在於賦予腦細胞與甲狀腺最純淨的修復微量營養。
+              <td class="risk-cell">
+                宿便長時間滯留發酵，產生腐敗毒素破壞腸壁（腸漏）；若服藥時誤配高鈣或豆漿，會導致甲狀腺藥物吸收大幅不足。
+              </td>
+              <td class="action-cell">
+                <strong>【4 小時安全用藥法則】</strong><br>
+                • 辛特昂錠<strong>嚴格於早晨 06:30 空腹配純淨溫水</strong>。<br>
+                • 鈣片（加美D）、大豆優質蛋白素、高纖維製品<strong>嚴格排在晚餐後或睡前（相隔 12 小時以上）</strong>。<br>
+                • 晚餐後補充<strong>鎂元素（加美D）</strong>，利用高滲透性放鬆平滑肌、吸引水分軟便。
               </td>
             </tr>
 
             <tr>
               <td class="dim-cell">
-                常規用藥與排便
-                <span class="dim-tag badge-rose">重大關鍵</span>
-              </td>
-              <td class="cur-cell">
-                服用 <strong>辛特昂錠</strong><br>
-                （甲狀腺低下治療藥）<br>
-                ➔ <strong>造成頑固便秘</strong>
+                ② 腸腦軸與專注力評估
+                <span class="dim-tag badge-amber">神經發炎</span>
               </td>
               <td class="mech-cell">
-                1. <strong>甲狀腺低下生理機制</strong>：甲狀腺素不足直接導致胃腸蠕動極緩慢、平滑肌乏力，極易積存乾硬糞便。<br>
-                2. <strong>藥物吸收交互作用</strong>：辛特昂錠（左旋甲狀腺素）極易與<strong>鈣片、鐵劑、大豆蛋白與高纖維</strong>在腸道螯合，導致藥效大幅流失！
-                <div class="danger-box">
-                  <strong>宿便危害</strong>：毒素滯留發酵，加劇腸漏與大腦微發炎。
-                </div>
+                1. <strong>腸漏與外啡肽 (Exorphins)</strong>：起司中的<strong>酪蛋白 (Casein)</strong> 與麵食中的<strong>麩質 (Gluten)</strong>，在消化不全時會轉化為類鴉片胜肽。<br>
+                2. <strong>神經微發炎</strong>：胜肽透過受損腸壁穿透血腦屏障，刺激類鴉片受體。
               </td>
-              <td class="strat-cell">
-                <strong>【最核心用藥安全底線：4 小時法則】</strong><br>
-                • 辛特昂錠**嚴格在早晨 6:30 空腹服用**。<br>
-                • **鈣片（加美D）、大豆蛋白素、高纖製品嚴禁早上同服，務必改在晚餐後或睡前**（間隔 4 小時以上），互不干擾！<br>
-                • 補充**鎂元素**放鬆腸道平滑肌、溫和軟化糞便。
+              <td class="risk-cell">
+                大腦長期處於神經微發炎與迷茫狀態，直接誘發並加劇自閉特質、感官超載、情緒躁動與注意力斷崖。
+              </td>
+              <td class="action-cell">
+                <strong>【先修腸道，大腦放鬆】</strong><br>
+                • 補充<strong>紐崔萊益生菌</strong>，重塑腸黏膜屏障，阻擋外啡肽滲入血液。<br>
+                • 補充<strong>深海魚油 (Omega-3 DHA/EPA)</strong>，保護神經髓鞘突觸，抑制發炎並潤滑腸道。<br>
+                • 補充<strong>大豆卵磷脂（膽鹼）</strong>，提供神經傳導物質乙醯膽鹼原料。
               </td>
             </tr>
 
             <tr>
               <td class="dim-cell">
-                神經與行為特質
-                <span class="dim-tag badge-amber">主訴徵候</span>
-              </td>
-              <td class="cur-cell">
-                自閉症徵症<br>
-                <strong>注意力不集中</strong>
+                ③ 飲食偏好與血糖評估
+                <span class="dim-tag badge-purple">精緻白澱粉</span>
               </td>
               <td class="mech-cell">
-                1. <strong>甲狀腺與腦代謝</strong>：甲狀腺低下本身就會造成大腦代謝緩慢、腦霧、反應遲鈍與專注力難以集中。<br>
-                2. <strong>腸腦軸線 (Gut-Brain Axis)</strong>：便秘毒素透過受損腸壁循環刺激大腦類鴉片受體，加重感官敏感與焦躁。
+                1. <strong>精緻高 GI 震盪</strong>：白米飯與白麵缺乏膳食纖維，消化過快引發血糖劇烈飆升驟降。<br>
+                2. <strong>「白色陷阱」隱性飢餓</strong>：缺乏深色蔬果之彩虹植物營養素，粒線體能量生成與抗氧化能力低落。
               </td>
-              <td class="strat-cell">
-                <strong>避開醫療診斷詞彙</strong>，向家長解釋「甲狀腺管能量、腸道管排毒、大腦管訊號」的三合一連動原理。<br>
-                說明**「宿便通了、腸子乾淨了，大腦訊號才不會卡住」**，專注力自然提升。
+              <td class="risk-cell">
+                血糖暴起暴落造成神經短暫亢奮後急速疲憊渙散；缺少纖維更使甲狀腺低下型便秘惡化。
+              </td>
+              <td class="action-cell">
+                <strong>【漸進混搭換色法】</strong><br>
+                • <strong>切忌強硬抽掉白飯</strong>（防止自閉固著抗拒）。<br>
+                • 白米中悄悄切入 <strong>10% 甜地瓜丁</strong>（兼具孩子喜愛的微甜與豐富水溶性纖維）。<br>
+                • 逐步遞減麵粉製品頻率，起司適量替代。
               </td>
             </tr>
 
             <tr>
               <td class="dim-cell">
-                飲食偏好行為
-                <span class="dim-tag badge-purple">關鍵核心</span>
-              </td>
-              <td class="cur-cell">
-                偏愛<strong>「白色食物」</strong><br>
-                （起司、白飯、白麵）
+                ④ 生活作息改善路徑
+                <span class="dim-tag badge-primary">生活型態</span>
               </td>
               <td class="mech-cell">
-                1. <strong>起司 (酪蛋白) ＆ 麵食 (麩質)</strong>：腸漏時未消化完全的胜肽形成<strong>外啡肽</strong>干擾中樞神經。<br>
-                2. <strong>零纖維精緻澱粉</strong>：缺少纖維支撐糞便體積，使甲狀腺低下引起的腸道慢蠕動更加惡化，加劇便秘。
+                <strong>早餐穩血糖、午餐多防護、晚餐黃金修復主場</strong>。<br>
+                家裡現煮的晚餐擁有 100% 主導權，是修復腸道與補足營養的最佳時機。
               </td>
-              <td class="strat-cell">
-                <strong>切忌強硬抽掉白色食物</strong>（防自閉特質劇烈抗拒）。<br>
-                <strong>採取「漸進混搭換色法」</strong>：<br>
-                • 白飯中混入 10% 地瓜丁（富含水溶性纖維助排便）或花椰菜碎米。<br>
-                • 起司適量減量，逐步降低麵食頻率。<br>
-                • 晨起空腹溫水 ＋ 益生菌啟動排便反射。
+              <td class="risk-cell">
+                學校午餐油質偏促發炎且食材難控；早餐若單純依賴水果易導致果糖吸收過快。
               </td>
-            </tr>
-
-            <tr>
-              <td class="dim-cell">
-                早餐生活作息
-                <span class="dim-tag badge-primary">晨間能量</span>
-              </td>
-              <td class="cur-cell">
-                水煮蛋 ＋ 香蕉 ＋ 蘋果
-              </td>
-              <td class="mech-cell">
-                <strong>優勢</strong>：水煮蛋有優質蛋白與卵磷脂（膽鹼）；香蕉蘋果富含天然果膠、鉀與水溶性纖維助便。<br>
-                <strong>用藥叮嚀</strong>：此餐與早上辛特昂錠間隔 45 分鐘，且此時**暫不添加高量大豆蛋白素或鈣片**，維護藥物吸收。
-              </td>
-              <td class="strat-cell">
-                <strong>微調指引</strong>：<br>
-                • 保留水煮蛋與水果。<br>
-                • 晨起先喝大杯純淨溫水促排便。<br>
-                • 暫不在此時沖泡大豆蛋白粉，避免大豆異黃酮干擾早晨甲狀腺素吸收。
-              </td>
-            </tr>
-
-            <tr>
-              <td class="dim-cell">
-                午餐生活作息
-                <span class="dim-tag badge-sky">學校環境</span>
-              </td>
-              <td class="cur-cell">
-                學校營養午餐
-              </td>
-              <td class="mech-cell">
-                大鍋油多為高 Omega-6 促發炎沙拉油，且精緻白飯多、蔬菜經高溫烹調纖維活力減弱，加工肉品多。
-              </td>
-              <td class="strat-cell">
-                提醒孩子在學校多裝溫水喝、多夾原型深綠色蔬菜、少喝含糖濃湯。<br>
-                放學接回時，準備健康點心（如去皮無調味堅果、無糖豆漿），補充午餐不足的健康脂肪。
-              </td>
-            </tr>
-
-            <tr>
-              <td class="dim-cell">
-                晚餐生活作息
-                <span class="dim-tag badge-primary">黃金窗口</span>
-              </td>
-              <td class="cur-cell">
-                <strong>家裡現煮</strong>
-              </td>
-              <td class="mech-cell">
-                <strong>【100% 營養修復 ＆ 排便救星黃金時段】</strong><br>
-                與早晨辛特昂錠相隔超過 12 小時，是補充<strong>大豆蛋白素、高纖蔬果、好油脂與加美D鈣鎂錠</strong>的最佳安全時機！
-              </td>
-              <td class="strat-cell">
-                <strong>打造「潤腸排毒彩虹餐盤」</strong>：<br>
-                • **深海魚（鮭魚/鯖魚）**：好油脂潤滑腸道、抗發炎。<br>
-                • **雙色高纖蔬菜**：秋葵、地瓜葉、黑木耳（黏多醣潤腸）。<br>
-                • **主食混入地瓜糙米**。<br>
-                • 餐後補充**加美D鈣錠（含鎂放鬆軟便）**與**益生菌**。
+              <td class="action-cell">
+                <strong>【一日黃金作息落地】</strong><br>
+                • <strong>早餐</strong>：保留水煮蛋，水果減半，早晨多喝溫水。<br>
+                • <strong>午餐</strong>：提醒孩子多喝水、多夾深綠色蔬菜、少喝含糖甜湯。<br>
+                • <strong>晚餐（核心窗口）</strong>：深海魚（鮭/鯖）＋ 高纖雙色蔬菜（秋葵/木耳）＋ 地瓜糙米混白飯。
               </td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <!-- Mobile Cards Fallback -->
+      <!-- Mobile Cards for Part 2 -->
       <div class="mobile-cards">
         <div class="mobile-card">
           <div class="mobile-card-header">
-            <span class="mobile-card-title">常規用藥與排便</span>
-            <span class="badge badge-rose">重大關鍵</span>
+            <span class="mobile-card-title">① 藥物與排便機能評估</span>
+            <span class="badge badge-rose">用藥安全</span>
           </div>
           <div class="mobile-card-body">
             <div class="mobile-field">
-              <div class="mobile-field-label">現況</div>
-              <div class="mobile-field-content">服用<strong>辛特昂錠</strong>（甲狀腺低下治療藥），<strong>造成便秘</strong></div>
+              <div class="mobile-field-label">核心機制</div>
+              <div class="mobile-field-content">甲狀腺低下致腸道乏力；辛特昂錠易與鈣、鐵、高纖、大豆蛋白螯合流失。</div>
             </div>
             <div class="mobile-field">
-              <div class="mobile-field-label">營養與藥理機制</div>
-              <div class="mobile-field-content">甲狀腺低下腸蠕動遲緩；辛特昂錠易與鈣、鐵、大豆蛋白、高纖結合降低藥效。宿便毒素滯留加劇分心。</div>
+              <div class="mobile-field-label">潛在風險</div>
+              <div class="mobile-field-content" style="color: #991B1B;">宿便乾結破壞腸黏膜；藥物若與鈣/豆類同服降低吸收。</div>
             </div>
             <div class="mobile-field">
-              <div class="mobile-field-label">諮詢策略</div>
-              <div class="mobile-field-content"><strong>【4小時法則】</strong>辛特昂錠晨起空腹吃；鈣片與蛋白粉移至晚餐或睡前，搭配「鎂」軟便放鬆。</div>
+              <div class="mobile-field-label">改善處方</div>
+              <div class="mobile-field-content"><strong>【4小時法則】</strong>辛特昂晨起空腹吃；鈣片與蛋白粉移至晚餐後，以「鎂」軟便。</div>
             </div>
           </div>
         </div>
 
         <div class="mobile-card">
           <div class="mobile-card-header">
-            <span class="mobile-card-title">神經與行為特質</span>
-            <span class="badge badge-amber">主訴徵候</span>
+            <span class="mobile-card-title">② 腸腦軸與專注力評估</span>
+            <span class="badge badge-amber">神經發炎</span>
           </div>
           <div class="mobile-card-body">
             <div class="mobile-field">
-              <div class="mobile-field-label">現況</div>
-              <div class="mobile-field-content">自閉症徵症、注意力不集中</div>
+              <div class="mobile-field-label">核心機制</div>
+              <div class="mobile-field-content">酪蛋白與小麥麩質未完全水解形成外啡肽，透過受損腸壁刺激大腦類鴉片受體。</div>
             </div>
             <div class="mobile-field">
-              <div class="mobile-field-label">機制</div>
-              <div class="mobile-field-content">甲狀腺能量代謝低緩 ＋ 腸道便秘毒素刺激大腦迷走神經，雙重打擊專注力。</div>
-            </div>
-            <div class="mobile-field">
-              <div class="mobile-field-label">諮詢策略</div>
-              <div class="mobile-field-content">向家長說明「甲狀腺管能量、腸道管排毒」，清空宿便與補充好菌能直接提升專注力。</div>
+              <div class="mobile-field-label">改善處方</div>
+              <div class="mobile-field-content">益生菌修補腸黏膜 ＋ 深海魚油 (Omega-3) 抑制神經發炎 ＋ 卵磷脂補乙醯膽鹼。</div>
             </div>
           </div>
         </div>
 
         <div class="mobile-card">
           <div class="mobile-card-header">
-            <span class="mobile-card-title">飲食偏好行為</span>
-            <span class="badge badge-purple">關鍵核心</span>
-          </div>
-          <div class="mobile-card-body">
-            <div class="mobile-field">
-              <div class="mobile-field-label">現況</div>
-              <div class="mobile-field-content">偏愛<strong>白色食物</strong>（起司、白飯、白麵）</div>
-            </div>
-            <div class="mobile-field">
-              <div class="mobile-field-label">機制</div>
-              <div class="mobile-field-content">缺纖維使便秘雪上加霜；麵食麩質與起司酪蛋白形成外啡肽干擾專注。</div>
-            </div>
-            <div class="mobile-field">
-              <div class="mobile-field-label">諮詢策略</div>
-              <div class="mobile-field-content">漸進混入地瓜丁（富纖維促排便），搭配空腹大杯溫水與益生菌。</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mobile-card">
-          <div class="mobile-card-header">
-            <span class="mobile-card-title">三餐作息配置</span>
+            <span class="mobile-card-title">③ 飲食偏好與三餐作息</span>
             <span class="badge badge-primary">生活型態</span>
           </div>
           <div class="mobile-card-body">
             <div class="mobile-field">
-              <div class="mobile-field-label">早餐現況</div>
-              <div class="mobile-field-content">水煮蛋 ＋ 水果（暫不放大豆蛋白或鈣片，隔開辛特昂錠）。</div>
+              <div class="mobile-field-label">白澱粉解方</div>
+              <div class="mobile-field-content">白飯混入 10% 甜地瓜丁（補水溶性纖維促排便），不強硬戒斷。</div>
             </div>
             <div class="mobile-field">
-              <div class="mobile-field-label">午餐現況</div>
-              <div class="mobile-field-content">營養午餐多喝水、多吃青菜，放學給予無糖原型堅果。</div>
-            </div>
-            <div class="mobile-field">
-              <div class="mobile-field-label">晚餐現況</div>
-              <div class="mobile-field-content"><strong>家裡煮（黃金時段）</strong>：深海魚潤腸、秋葵木耳高纖、加美D鈣鎂錠（鎂助排便）。</div>
+              <div class="mobile-field-label">晚餐黃金窗口</div>
+              <div class="mobile-field-content">深海魚好油潤腸 ＋ 秋葵木耳黏多醣 ＋ 晚間加美D鈣鎂錠。</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 2: Timeline Schedule Card (Crucial for Levothyroxine Medication Safety) -->
+    <!-- Timeline schedule card -->
     <section class="section-wrap">
       <div class="schedule-card">
         <div class="schedule-header">
@@ -1253,71 +1219,15 @@
       </div>
     </section>
 
-    <!-- Section 3: White Diet, Constipation & Gut-Brain Axis Infographic -->
+    <!-- Supplement Strategy -->
     <section class="section-wrap">
-      <div class="section-header">
+      <div class="section-header-box">
         <div>
-          <h3 class="section-title">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
-            深度解密：甲狀腺低下、白色食物與便秘的惡性循環
-          </h3>
-          <p class="section-subtitle">為什麼把腸道宿便清空，孩子的專注力與情緒就會明顯好轉？</p>
-        </div>
-      </div>
-
-      <div class="infographic-card">
-        <div class="flow-steps">
-          <div class="flow-step warning">
-            <div class="step-number">1</div>
-            <h4 class="step-title">甲狀腺低下 ＋ 白澱粉</h4>
-            <p class="step-desc">細胞粒線體能量慢，腸道蠕動乏力；加上偏愛無纖維白飯白麵，雙重打擊排便機制。</p>
+          <div class="section-title">
+            <span class="part-tag green">營養處方</span>
+            💊 紐崔萊關鍵營養素配置階梯方案
           </div>
-
-          <div class="flow-step danger">
-            <div class="step-number">2</div>
-            <h4 class="step-title">乾硬便秘與毒素滯留</h4>
-            <p class="step-desc">糞便滯留腸道發酵發臭，壞菌大量滋生，未消化酪蛋白與麩質腐敗產生大量有害胺類與內毒素。</p>
-          </div>
-
-          <div class="flow-step danger">
-            <div class="step-number">3</div>
-            <h4 class="step-title">腸漏與神經微發炎</h4>
-            <p class="step-desc">腸壁緊密連接被破壞，毒素滲入血液，通過迷走神經直通大腦，引發神經微發炎。</p>
-          </div>
-
-          <div class="flow-step danger">
-            <div class="step-number">4</div>
-            <h4 class="step-title">專注渙散與情緒躁動</h4>
-            <p class="step-desc">大腦神經傳導物質代謝失衡，類鴉片受體受刺激，加劇自閉光譜迷茫感與專注力斷崖。</p>
-          </div>
-        </div>
-
-        <div class="mindset-grid">
-          <div class="mindset-card rose">
-            <h4>💊 避坑 1：辛特昂絕不配鈣與豆漿</h4>
-            <p>早晨辛特昂錠是甲狀腺素，嚴禁與鈣片、大豆蛋白素或奶類同時下肚；嚴守早晚分流，確保 100% 藥效吸收。</p>
-          </div>
-          <div class="mindset-card green">
-            <h4>🌿 解方 2：晚上靠「鎂 ＋ 好油」溫和通便</h4>
-            <p>不依賴刺激性瀉藥！加美D鈣錠中的「鎂」能自然吸引水分軟化糞便，深海魚油潤滑腸壁，隔天自然順暢排便。</p>
-          </div>
-          <div class="mindset-card amber">
-            <h4>🎨 策略 3：地瓜丁混白飯，補足隱性纖維</h4>
-            <p>不要強迫孩子吃粗糙糙米。在白飯中切入甜甜的小地瓜丁，兼顧白色視覺偏好，又悄悄補足水溶性膳食纖維。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 4: Supplement Strategy -->
-    <section class="section-wrap">
-      <div class="section-header">
-        <div>
-          <h3 class="section-title">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7.07-7.07l7 7a5 5 0 0 1-7.07 7.07Z"></path><path d="m8.5 8.5 7 7"></path></svg>
-            健管調養與營養素階梯配置方案
-          </h3>
-          <p class="section-subtitle">專為 6 歲兒童設計之紐崔萊關鍵營養調理架構（嚴格規避藥物交互作用）</p>
+          <div class="section-subtitle">專為 6 歲兒童設計之安全營養調理架構（嚴格規避藥物交互作用）</div>
         </div>
       </div>
 
@@ -1414,15 +1324,15 @@
       </div>
     </section>
 
-    <!-- Section 5: Follow-up Checklist -->
+    <!-- Follow-up Checklist -->
     <section class="section-wrap">
-      <div class="section-header">
+      <div class="section-header-box">
         <div>
-          <h3 class="section-title">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-            健管諮詢追蹤檢核表
-          </h3>
-          <p class="section-subtitle">點擊核取方塊可直接於瀏覽器保存諮詢進展（自動記錄）</p>
+          <div class="section-title">
+            <span class="part-tag green">追蹤管理</span>
+            📋 健管諮詢進展追蹤檢核表
+          </div>
+          <div class="section-subtitle">點擊核取方塊可直接於瀏覽器保存諮詢進展（自動記錄）</div>
         </div>
       </div>
 
@@ -1478,7 +1388,7 @@
     // Checklist LocalStorage Persistence
     function loadChecklist() {
       for (let i = 1; i <= 4; i++) {
-        const checked = localStorage.getItem('yijun_child_check_v2_' + i);
+        const checked = localStorage.getItem('yijun_child_check_v3_' + i);
         if (checked === 'true') {
           const el = document.getElementById('check-' + i);
           if (el) el.checked = true;
@@ -1490,7 +1400,7 @@
       for (let i = 1; i <= 4; i++) {
         const el = document.getElementById('check-' + i);
         if (el) {
-          localStorage.setItem('yijun_child_check_v2_' + i, el.checked);
+          localStorage.setItem('yijun_child_check_v3_' + i, el.checked);
         }
       }
       showToast('諮詢進展已自動儲存於瀏覽器！');
@@ -1498,18 +1408,20 @@
 
     // Copy Summary Function
     function copyConsultSummary() {
-      const summaryText = `【怡君子・6歲健管諮詢核心摘要 (含甲狀腺用藥與便秘)】
-• 基本指標：6歲，身高體重標準，具自閉特質、注意力不集中。
-• 常規用藥：辛特昂錠 (甲狀腺低下治療藥) ➔ 造成腸道蠕動遲緩與頑固便秘。
-• 飲食習慣：偏愛白色食物（起司、白飯、白麵，極度缺纖維，加劇便秘與外啡肽腸腦軸干擾）。
-• 【最關鍵用藥衛教：4 小時法則】：
-  - 辛特昂錠必須於「早晨 06:30 空腹」服用。
-  - 鈣片（加美D）、大豆蛋白素、高纖製品嚴禁早上同服（必須間隔 4 小時以上），全數安排在晚餐後或睡前！
-• 便秘與專注力調養處方：
-  1. 早上：辛特昂錠空腹 + 大杯溫水 ➔ 45分鐘後吃早餐水煮蛋+水果。
-  2. 晚餐：主場現煮，深海魚好油潤腸 + 秋葵/木耳高纖 + 白飯混地瓜丁。
-  3. 晚間補充：加美D鈣錠（含鎂放鬆腸道軟化糞便）+ 紐崔萊益生菌（重塑腸腦軸）。
-• 諮詢理念：宿便清空、腸道乾淨，大腦神經訊號暢通，專注力自然穩定！`;
+      const summaryText = `【怡君子・6歲健管個案記錄與初步評估報告】
+---
+【上半段：個案記錄表】
+• 基本體況：6歲，身高體重標準；具自閉特質、注意力不集中。
+• 常規用藥：早晨服辛特昂錠 (甲狀腺低下治療藥) ➔ 造成頑固便秘。
+• 飲食偏好：偏愛白色食物（起司、白飯、白麵，極度缺纖維）。
+• 生活習慣：早晨空腹服藥；早餐水煮蛋+香蕉+蘋果；午餐營養午餐；晚餐家裡現煮。
+
+---
+【下半段：初步評估報告】
+• ① 藥物排便：辛特昂錠與鈣/鐵/大豆蛋白具螯合禁忌，嚴守「4小時法則」（早晨空腹服藥；鈣片/蛋白素排在晚餐後）。以晚餐加美D之「鎂」軟便。
+• ② 腸腦軸：麵食麩質與起司酪蛋白未消化完全形成外啡肽干擾專注。補充益生菌修復腸壁 + 深海魚油Omega-3抗發炎 + 卵磷脂補乙醯膽鹼。
+• ③ 飲食優化：採「漸進混搭換色法」，白飯混10%甜地瓜丁補充水溶性纖維，不強硬戒斷白色食物。
+• ④ 作息落地：晚餐為黃金窗口，深海魚潤腸 + 秋葵木耳高纖 + 睡前加美D與益生菌。`;
 
       navigator.clipboard.writeText(summaryText).then(() => {
         showToast('已複製健管諮詢摘要至剪貼簿！');
